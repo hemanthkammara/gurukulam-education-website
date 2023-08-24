@@ -2,6 +2,7 @@ import { Link } from '@chakra-ui/react'
 import { Link as ChakraLink, LinkProps } from '@chakra-ui/react'
 import { Link as ReactRouterLink } from 'react-router-dom'
 import { Flex, Spacer } from '@chakra-ui/react'
+import { Button, ButtonGroup } from '@chakra-ui/react'
 function Navbar() {
 
 
@@ -48,6 +49,9 @@ function Navbar() {
         <ChakraLink as={ReactRouterLink} to='/contact'>
           Contact Us
         </ChakraLink>
+        <Spacer />
+
+        <Button colorScheme='blue'>Sign in</Button>
 
 
     </Flex>
