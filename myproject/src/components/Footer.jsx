@@ -3,10 +3,11 @@ import { FaFacebook, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <Box bg="#5f8bdd" color="white" p={8}>
+    <Box bg="black" color="white" p={8}>
+      {/* <Box bg="#5f8bdd" color="white" p={8}></Box> */}
       <Flex justifyContent="space-between" mb={6}>
         <Box>
-          <Heading size="lg">Coaching Institute</Heading>
+          <Heading size="lg">Gurukulam</Heading>
           <Text mt={2}>
             Education Service Ltd,{" "}
             <br />
@@ -50,13 +51,13 @@ const Footer = () => {
 
             </Box>
 
-            <Box >
+            <Box mt="5px">
           <a href="https://www.facebook.com">
             <Icon as={FaFacebook} boxSize={6} />
           </a>
    
           <a href="https://www.youtube.com">
-            <Icon as={FaYoutube} boxSize={6} />
+            <Icon as={FaYoutube} boxSize={6}  marginLeft="15px"/>
           </a>
             </Box>
   
