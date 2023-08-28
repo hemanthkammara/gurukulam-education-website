@@ -1,10 +1,20 @@
+import './navbar.css'
+import { NavLink } from "react-router-dom";
 import { Link,Box, Stack } from '@chakra-ui/react'
 import { Link as ChakraLink, LinkProps } from '@chakra-ui/react'
 import { Link as ReactRouterLink } from 'react-router-dom'
 import { Flex, Spacer } from '@chakra-ui/react'
 import { Button, ButtonGroup } from '@chakra-ui/react'
 import { Image } from '@chakra-ui/react'
+import { useNavigate } from "react-router-dom"
 function Navbar() {
+  const navigate = useNavigate()
+
+const handleClick=()=>{
+   navigate("/signin")
+
+
+}
 
 
   return (
@@ -18,19 +28,20 @@ function Navbar() {
       <Spacer />
         {/* <Stack  direction='row' width={600}   border='1px'> */}
         <Stack  direction='row' width={600}   >
-      <Link as={ReactRouterLink} to='/about'>
+
+     <Link as={NavLink} to='/about' exact activeClassName="activeLink">
           About.Us
-        </Link>
+      </Link>
 
         <Spacer />
 
-        <ChakraLink as={ReactRouterLink} to='/results'>
+        <ChakraLink as={ReactRouterLink} to='/results' activeClassName="activeLink">
           Results
         </ChakraLink>
 
         <Spacer />
 
-        <ChakraLink as={ReactRouterLink} to='/courses'>
+        <ChakraLink as={ReactRouterLink} to='/courses' className='navbar'>
          Courses
         </ChakraLink>
 
@@ -54,7 +65,7 @@ function Navbar() {
         <Spacer />
         </Stack>
         <Spacer/>
-        <Button color="white" backgroundColor="black">Sign in</Button>
+        <Button color="white"  onClick={handleClick}  backgroundColor="black">Sign in</Button>
 
 
     </Flex>

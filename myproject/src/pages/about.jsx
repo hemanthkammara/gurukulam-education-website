@@ -102,7 +102,7 @@ export default function AboutUs() {
         />
       </Box>
       <Box width="50%">
-      <Heading marginBottom="20px">why Gurukulam ?</Heading>
+      <Heading marginBottom="20px">Why Gurukulam ?</Heading>
         <Text mb={10} >
           Gurukulam is India’s most trusted institute and the best NEET coaching
           institute in India. Every year, numerous students secure top ranks in
