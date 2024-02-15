@@ -3,6 +3,7 @@
 Welcome to my online coaching platform, tailored specifically for NEET and IIT aspirants! Here, you'll find sections for demo classes, purchased courses, and tutorials, all accessible after logging in. Whether you're looking to explore our offerings with demo classes or dive into comprehensive courses, you can easily make purchases and access tutorials within the platform.
 # techStacks used
 React
+<br/>
 chakra UI
 <hr/>
 
